@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="scripts/forms-synapcom-levis.js"></script>
+    </head>
+<body>
+        
+    <form id="contact-form" method="post" class="forms" novalidate>
+        
+        <div>
+            <input type="hidden" id="contact_origin_id" value=107> <!-- input the "contact_origin_id" value -->
+        </div>
+
+        <div>
+            <input type="text" class="input invalid" id="contact_first_name" name="first_name" placeholder="NOME"> 
+        </div>
+        
+        <div>
+            <input type="text" class="input invalid" id="contact_last_name" name="last_name" placeholder="SOBRENOME">
+        </div>
+
+        <div>
+            <input type="text" class="input invalid" id="contact_birth_date" name="birth_date" placeholder="DATA DE NASCIMENTO (dd/mm/aaaa)" pattern="^\d{2}\/\d{2}\/\d{4}">
+        </div>
+        
+        <div>
+            <input type="text" class="input invalid" id="contact_email" name="email" placeholder="E-MAIL"> 
+        </div>
+        
+        <br>
+
+        <div>
+            <input type="checkbox" id="contact_sms_checker" name="sms_checker">
+            <label for="contact_sms_checker" class="checker-radio_label">Quero receber ofertas por SMS</label>
+        </div>
+
+        <div id="phone_block" style="display: none;">
+            <input type="text" class="input invalid" id="contact_phone" name="phone" placeholder="CELULAR COM DDD" /> <br>
+        </div>
+
+        <div id="cpf_block" style="display: none;">
+            <input type="text" class="input invalid" id="contact_cpf" name="cpf" placeholder="CPF"> <br>
+        </div>
+        <br>
+
+        <div > 
+            <input type="checkbox" id="contact_privacy_policy_checker" name="privacy_policy_checker">
+            <label for="contact_privacy_policy_checker" class="checker-radio_label">Li e concordo com a <a href="https://www.palmeirasstore.com/institucional/politica-privacidade" target="_blank">política de privacidade</a></label>
+        </div>
+
+        <br> 
+        
+        <div>
+            <input type="button" class="button" id="contact_submit" value="CADASTRAR">
+        </div>
+        <div class="loader" id="loader" style="display: none;"></div>
+    </form>
+    
+</body>
+</html>
